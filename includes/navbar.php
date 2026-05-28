@@ -76,7 +76,10 @@ if(isset($_SESSION['user_id'])){
 
         <li>
 
-            <a href="/rwc/posts/all-posts.php">
+           
+
+            <a href="/posts/all-posts.php">
+
 
                 Blogs
 
@@ -88,7 +91,7 @@ if(isset($_SESSION['user_id'])){
 
         <li>
 
-            <a href="/rwc/posts/create-post.php">
+            <a href="/posts/create-post.php">
 
                 Create Post
 
@@ -176,7 +179,7 @@ if(isset($_SESSION['user_id'])){
 
                 </a>
 
-                <a href="/rwc/posts/create-post.php">
+                <a href="/posts/create-post.php">
 
                     <i class="ri-add-circle-line"></i>
 
@@ -184,7 +187,7 @@ if(isset($_SESSION['user_id'])){
 
                 </a>
 
-                <a href="/rwc/posts/all-posts.php">
+                <a href="/posts/all-posts.php">
 
                     <i class="ri-article-line"></i>
 
@@ -193,7 +196,7 @@ if(isset($_SESSION['user_id'])){
                 </a>
 
                 <a
-                href="/rwc/auth/logout.php"
+                href="/auth/logout.php"
                 class="logout-btn"
                 >
 
@@ -211,7 +214,7 @@ if(isset($_SESSION['user_id'])){
 
         <li>
 
-            <a href="/rwc/register.php">
+            <a href="/register.php">
 
                 Register
 
@@ -222,7 +225,7 @@ if(isset($_SESSION['user_id'])){
         <li>
 
             <a
-            href="/rwc/Login.php"
+            href="/Login.php"
             class="login-btn-nav"
             >
 
