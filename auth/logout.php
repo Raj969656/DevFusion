@@ -8,6 +8,6 @@ session_destroy();
 
 <script>
 
-window.location.href="/RWC/index.php";
+window.location.href="/index.php";
 
 </script>

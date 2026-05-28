@@ -34,7 +34,7 @@ if(isset($_POST['login'])){
 
 alert('Login Successful');
 
-window.location.href='/rwc/index.php';
+window.location.href='/rindex.php';
 
 </script>
 

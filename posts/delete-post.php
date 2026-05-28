@@ -9,7 +9,7 @@ include("../Config/db.php");
 
 if(!isset($_SESSION['user_id'])){
 
-    header("Location: /rwc/Login.php");
+    header("Location: /Login.php");
 
     exit();
 
@@ -19,7 +19,7 @@ if(!isset($_SESSION['user_id'])){
 
 if(!isset($_GET['id'])){
 
-    header("Location: /rwc/dashboard.php");
+    header("Location: /dashboard.php");
 
     exit();
 
@@ -47,7 +47,7 @@ $result = mysqli_query(
 
 if(mysqli_num_rows($result) == 0){
 
-    header("Location: /rwc/dashboard.php");
+    header("Location: /dashboard.php");
 
     exit();
 
@@ -114,7 +114,7 @@ mysqli_query(
 
 /* REDIRECT */
 
-header("Location: /rwc/dashboard.php");
+header("Location: /dashboard.php");
 
 exit();
 

@@ -23,7 +23,7 @@ if(isset($_POST['like_post'])){
 
     if(!isset($_SESSION['user_id'])){
 
-        header("Location: /rwc/Login.php");
+        header("Location: /Login.php");
 
         exit();
 
@@ -82,7 +82,7 @@ if(isset($_POST['post_comment'])){
 
     if(!isset($_SESSION['user_id'])){
 
-        header("Location: /rwc/Login.php");
+        header("Location: /Login.php");
 
         exit();
 
@@ -1600,7 +1600,7 @@ Likes
 <?php } else { ?>
 
 <a
-href="/rwc/Login.php"
+href="/Login.php"
 class="action-btn"
 style="text-decoration:none;"
 >
@@ -1717,13 +1717,13 @@ to comment on this post.
 
 <div class="auth-buttons">
 
-<a href="/rwc/Login.php">
+<a href="/Login.php">
 
 Login
 
 </a>
 
-<a href="/rwc/register.php">
+<a href="/register.php">
 
 Register
 
@@ -2123,7 +2123,7 @@ postId
 
 const response =
 await fetch(
-"/rwc/posts/like-post.php",
+"/posts/like-post.php",
 {
 method:"POST",
 body:formData

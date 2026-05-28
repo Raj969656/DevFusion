@@ -42,7 +42,7 @@ if(isset($_SESSION['user_id'])){
     <!-- LOGO -->
 
     <a
-    href="/rwc/index.php"
+    href="/index.php"
     class="logo"
     >
 
@@ -66,7 +66,7 @@ if(isset($_SESSION['user_id'])){
 
         <li>
 
-            <a href="/rwc/index.php">
+            <a href="/index.php">
 
                 Home
 
@@ -120,7 +120,7 @@ if(isset($_SESSION['user_id'])){
                     ?>
 
                     <img
-                    src="/rwc/uploads/profile/<?php
+                    src="/uploads/profile/<?php
                     echo $current_user['profile_photo'];
                     ?>"
                     class="avatar-img"
@@ -171,7 +171,7 @@ if(isset($_SESSION['user_id'])){
 
             <div class="dropdown-menu" id="profileDropdown">
 
-                <a href="/rwc/dashboard.php">
+                <a href="/dashboard.php">
 
                     <i class="ri-dashboard-line"></i>
 
