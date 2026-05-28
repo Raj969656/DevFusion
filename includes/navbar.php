@@ -6,7 +6,7 @@ if(session_status() === PHP_SESSION_NONE){
 
 }
 
-include($_SERVER['DOCUMENT_ROOT'] . "/rwc/Config/db.php");
+include(__DIR__ . "/../Config/db.php");
 
 /* USER DATA */
 
