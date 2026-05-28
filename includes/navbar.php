@@ -38,7 +38,11 @@ if(isset($_SESSION['user_id'])){
 ?>
 
 <nav class="navbar">
+<button class="hamburger" id="hamburger">
 
+<i class="ri-menu-3-line"></i>
+
+</button>
     <!-- LOGO -->
 
     <a
@@ -62,7 +66,7 @@ if(isset($_SESSION['user_id'])){
 
     <!-- LINKS -->
 
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
 
         <li>
 
@@ -340,7 +344,136 @@ if(isset($_SESSION['user_id'])){
 
     position:relative;
 }
+/* HAMBURGER */
 
+.hamburger{
+
+display:none;
+
+background:none;
+
+border:none;
+
+color:white;
+
+font-size:34px;
+
+cursor:pointer;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.navbar{
+
+flex-direction:row;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 5%;
+
+}
+
+/* SHOW BUTTON */
+
+.hamburger{
+
+display:block;
+
+}
+
+/* NAV LINKS */
+
+.nav-links{
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:100%;
+
+background:#081120;
+
+padding:25px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+max-height:0;
+
+overflow:hidden;
+
+transition:.4s;
+
+border-bottom:
+1px solid rgba(255,255,255,.08);
+
+}
+
+/* OPEN MENU */
+
+.nav-links.show-nav{
+
+max-height:1000px;
+
+padding:25px;
+
+}
+
+/* PROFILE */
+
+.profile-dropdown{
+
+width:100%;
+
+}
+
+.profile-box{
+
+width:100%;
+
+justify-content:space-between;
+
+}
+
+.dropdown-menu{
+
+position:relative;
+
+top:15px;
+
+right:auto;
+
+width:100%;
+
+opacity:1;
+
+visibility:visible;
+
+transform:none;
+
+display:none;
+
+}
+
+.profile-dropdown:hover .dropdown-menu{
+
+display:block;
+
+}
+
+}
 .nav-links a{
 
     text-decoration:none;
@@ -636,3 +769,27 @@ if(isset($_SESSION['user_id'])){
 }
 
 </style>
+<script>
+
+const hamburger =
+document.getElementById(
+"hamburger"
+);
+
+const navLinks =
+document.getElementById(
+"navLinks"
+);
+
+hamburger.addEventListener(
+"click",
+function(){
+
+navLinks.classList.toggle(
+"show-nav"
+);
+
+}
+);
+
+</script>
