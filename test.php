@@ -1,5 +1,7 @@
 <?php
 
-echo "PHP WORKING";
+include("Config/db.php");
+
+echo "Database Connected Successfully";
 
 ?>
